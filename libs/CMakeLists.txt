@@ -12,6 +12,7 @@ string(APPEND PRECOMPILED ${CMAKE_SOURCE_DIR}/../precompiled/linux)
 endif()
 
 add_definitions(-fPIC)
+add_definitions(-DENABLE_LOG=1)
 
 add_library(onigmolib
   SHARED 
@@ -92,12 +93,11 @@ add_library(editor_api
     ./tm-parser/textmate/scopes/scope.cpp
     ./tm-parser/textmate/scopes/types.cpp
     ./tm-parser/textmate/theme/theme.cpp
-    ./tm-parser/textmate/theme/util.cpp
+    ./tm-parser/textmate/resources/grammars.cpp
+    ./tm-parser/textmate/resources/themes.cpp
     ./tm-parser/textmate/extensions/util.cpp
     ./tm-parser/textmate/extensions/utf8.cpp
     ./tm-parser/textmate/extensions/extension.cpp
-    ./tm-parser/textmate/resources/grammars.cpp
-    ./tm-parser/textmate/resources/themes.cpp
     ./tinyxml2/tinyxml2.cpp
     ./jsoncpp/dist/jsoncpp.cpp
     ./highlighter/api.cpp
