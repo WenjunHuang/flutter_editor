@@ -391,14 +391,14 @@ class _ViewLine extends StatelessWidget {
   }
 }
 
-class View extends StatefulWidget {
-  View({Key? key}) : super(key: key);
+class MyView extends StatefulWidget {
+  MyView({Key? key}) : super(key: key);
 
   @override
   _View createState() => _View();
 }
 
-class _View extends State<View> {
+class _View extends State<MyView> {
   late ScrollController scroller;
   late ScrollController hscroller;
   late PeriodicTimer scrollTo;
