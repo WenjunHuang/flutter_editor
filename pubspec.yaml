@@ -36,10 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   provider: ^6.0.2
   flutter_highlight: ^0.7.0
-  ffi: ^1.1.2
-  flutter_svg: ^1.0.0
-  archive: ^3.1.6
-  path_provider: ^2.0.8
+  ffi: ^2.1.4
+  flutter_svg: ^2.0.17
+  archive: ^4.0.2
+  path_provider: ^2.1.5
   diff_match_patch: ^0.4.1
   highlight: ^0.7.0
 
